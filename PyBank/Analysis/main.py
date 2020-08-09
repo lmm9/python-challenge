@@ -20,8 +20,8 @@ with open (budget_csv, "r") as csvfile:
     profit=int(budget_data[1])
          
     # Calculate First and Last Values
-    open_date==0
-    close_date==0
+    open_date=0
+    close_date=0
     for i in range(0,len(profit)): 
         if open_date>date[i]:
             open_date=date[i]
@@ -55,7 +55,7 @@ with open(output_path, 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
 
     # Write the Summary Headers
-    csvwriter.writerow(["'''text")
+    csvwriter.writerow(["'''text"])
     csvwriter.writerow(["Financial Analysis"])
     csvwriter.writerow(["-----------------"])
     
